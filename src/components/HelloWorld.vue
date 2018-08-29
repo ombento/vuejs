@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="aaaa">
     <h1>{{ msg }}</h1>
     <h2>TESSS HELLOWORLD</h2>
 
@@ -8,8 +8,13 @@
           {{color.text}}
       </li>
     </ul>
+
+     <div style="padding-top : 10px">
+        <button class="vue-btn" @click="tambah(10)"> click me</button>
+    </div>  
     </div>
 
+   
   
 </template>
 
@@ -30,8 +35,13 @@ export default {
                text:'hijau',
                primary:true
              }
-
-      ]
+      ],
+      number : 2
+    }
+  },
+  methods:{
+    tambah(tes){
+      alert(this.number + tes);
     }
   }
 }
